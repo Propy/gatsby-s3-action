@@ -12,9 +12,9 @@ async function deploy(): Promise<void> {
     sizeOnly: getBooleanInput('only-size-changed'),
     filesNotToBrowserCache: [
       '*.html',
-      'sw.js',
-      'app-data.json',
-      'page-data/**/*.json'
+      '*sw.js',
+      '*app-data.json',
+      '*page-data/*.json'
     ],
     browserCacheDuration: getIntInput('browser-cache-duration'),
     cdnCacheDuration: getIntInput('cdn-cache-duration'),
